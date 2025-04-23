@@ -361,6 +361,11 @@ header .navbar {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon_1 img {
+	width: 50px;
+	margin: 5% 0;
+}
+
 .Grid1k {
   padding: 0 15px;
   max-width: 1200px;
