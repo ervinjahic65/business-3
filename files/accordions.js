@@ -8292,7 +8292,7 @@ var dialog = $.widget( "ui.dialog", {
 
 					// Hiding a focused element doesn't trigger blur in WebKit
 					// so in case we have nothing to focus on, explicitly blur the active element
-					// https://bugs.webkit.org/show_bug.cgi?id=47182
+					// 
 					$( activeElement ).blur();
 				}
 			} catch ( error ) {}
@@ -9357,13 +9357,13 @@ var droppable = $.ui.droppable;
 
 /*!
  * jQuery UI Effects 1.11.2
- * http://jqueryui.com
+ * 
  *
  * Copyright 2014 jQuery Foundation and other contributors
  * Released under the MIT license.
- * http://jquery.org/license
+ * 
  *
- * http://api.jqueryui.com/category/effects-core/
+ * h
  */
 
 
@@ -9379,11 +9379,11 @@ $.effects = {
 
 /*!
  * jQuery Color Animations v2.1.2
- * https://github.com/jquery/jquery-color
+ * 
  *
  * Copyright 2014 jQuery Foundation and other contributors
  * Released under the MIT license.
- * http://jquery.org/license
+ * 
  *
  * Date: Wed Jan 16 08:47:09 2013 -0600
  */
@@ -9799,7 +9799,7 @@ color.fn = jQuery.extend( color.prototype, {
 color.fn.parse.prototype = color.fn;
 
 // hsla conversions adapted from:
-// https://code.google.com/p/maashaack/source/browse/packages/graphics/trunk/src/graphics/colors/HUE2RGB.as?r=5021
+// 
 
 function hue2rgb( p, q, h ) {
 	h = ( h + 1 ) % 1;
@@ -10342,7 +10342,7 @@ $.extend( $.effects, {
 
 		// support: Firefox
 		// Firefox incorrectly exposes anonymous content
-		// https://bugzilla.mozilla.org/show_bug.cgi?id=561664
+		// 
 		try {
 			active.id;
 		} catch ( e ) {
