@@ -286,6 +286,14 @@ header .navbar {
 	font-style: normal;
 	font-size: 16px;
 }
+.navbar-brand img {
+	width: 95px;
+	height: auto;
+}
+footer img {
+	width: 220px;
+	height: auto;
+}
 #navbarResponsive {
 	z-index: 999;
 }
@@ -1409,6 +1417,9 @@ footer .contact-form button.filled-button:hover {
 	}
 	.contact-item {
 		margin-bottom: 30px;
+	}
+	.navbar-brand img {
+		width: 60px;
 	}
 }
 
