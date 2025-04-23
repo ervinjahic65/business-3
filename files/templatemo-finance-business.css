@@ -1234,7 +1234,112 @@ footer .contact-form button.filled-button:hover {
 	font-size: 15px;
 }
 
+/* FAQ Section Container */
+.faq-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff; /* White background for the section */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 2em;
+}
+
+.faq-section h2 em {
+    font-style: normal;
+    color: #007bff; /* Or your theme color */
+}
+
+.faq-section > span { /* Targeting the subtitle span */
+    display: block;
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1em;
+}
+
+
+/* Styling for each FAQ item (details element) */
+.faq-section details {
+    border: 1px solid #e0e0e0; /* Light border for separation */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #fff; /* Ensure white background */
+    transition: background-color 0.2s ease;
+}
+
+.faq-section details:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Remove default marker */
+.faq-section summary {
+    list-style: none;
+    display: block; /* Ensure it takes full width */
+    padding: 15px 40px 15px 20px; /* Added padding-right for icon */
+    font-weight: 600;
+    cursor: pointer;
+    position: relative; /* Needed for positioning the pseudo-element icon */
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.faq-section summary:hover {
+    background-color: #f9f9f9; /* Slight hover effect */
+}
+
+/* Hide default arrow in Webkit browsers (Chrome, Safari) */
+.faq-section summary::-webkit-details-marker {
+    display: none;
+}
+/* Hide default arrow in Firefox */
+.faq-section summary::marker {
+   display: none; /* Not consistently supported, ::-webkit- is more reliable */
+}
+
+
+/* Custom Icon using ::after */
+.faq-section summary::after {
+    content: '+'; /* Plus sign for closed state */
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4em;
+    color: #007bff; /* Icon color */
+    transition: transform 0.3s ease;
+}
+
+/* Change icon and background when open */
+.faq-section details[open] summary {
+    background-color: #f0f8ff; /* Light blue background when open */
+    border-bottom: 1px solid #e0e0e0; /* Add border when open */
+}
+
+.faq-section details[open] summary::after {
+    content: '−'; /* Minus sign for open state */
+    transform: translateY(-50%); /* Keep vertical alignment */
+}
+
+
+/* Styling for the answer content */
+.faq-content {
+    padding: 15px 20px;
+    border-top: 1px dashed #e0e0e0; /* Optional separator */
+    background-color: #fff; /* Ensure content background is white */
+    border-radius: 0 0 5px 5px; /* Match bottom radius */
+}
+
+.faq-content p {
+    margin: 0;
+    color: #555; /* Slightly lighter text for the answer */
+}
 
 
 /* Responsive Style */
