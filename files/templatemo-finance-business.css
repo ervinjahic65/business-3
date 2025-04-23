@@ -366,6 +366,10 @@ header .navbar {
 	margin: 5% 0;
 }
 
+.services_taital {
+	text-align: center;
+}
+
 .Grid1k {
   padding: 0 15px;
   max-width: 1200px;
@@ -713,6 +717,8 @@ ul.slick-dots {
 	background-color: #fff;	
 	padding: 30px;
 	border-radius: 5px;
+	cursor: default;
+	min-height: 250px;
 }
 .testimonial-item p {
 	font-size: 14px;
@@ -760,6 +766,7 @@ ul.slick-dots {
 
 .callback-form {
 	margin-top: 140px;
+	margin-bottom: 100px;
 }
 
 .callback-form .contact-form {
