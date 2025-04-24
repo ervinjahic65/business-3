@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es"> 
   <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-    <title>Contact Us - JM Consulting Global</title>
-
+    <title>Contáctenos - JM Consulting Global</title> 
     <link href="files/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="files/fontawesome.css">
@@ -18,6 +16,7 @@
     <link rel="icon" type="image/png" href="files/favicon.png" sizes="16x16">
 
     <style>
+      /* Styles kept as is */
       .modern-contact-form .form-group {
         margin-bottom: 1.5rem; /* Spacing between form fields */
       }
@@ -92,8 +91,7 @@
 
   <body>
     <p style="position: absolute; z-index: 99999999; left: 50%; transform: translateX(-50%); text-align: center; color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif;">
-      Advertisement
-    </p>
+      Publicidad </p>
 
     <div id="preloader">
         <div class="jumper">
@@ -106,24 +104,18 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-            <img src="files/logo.png" alt="Logo"> </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="files/logo.png" alt="Logo"> </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
+                <a class="nav-link" href="index.html">Inicio</a> </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html#services">Our Services</a> </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
+                <a class="nav-link" href="index.html#services">Nuestros Servicios</a> </li> <li class="nav-item">
+                <a class="nav-link" href="about.html">Sobre Nosotros</a> </li>
               <li class="nav-item active">
-                <a class="nav-link" href="contact.html">Contact Us
-                    <span class="sr-only">(current)</span>
-                </a>
+                <a class="nav-link" href="contact.html">Contáctenos <span class="sr-only">(actual)</span> </a>
               </li>
             </ul>
           </div>
@@ -135,9 +127,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1>Contact Us</h1>
-            <span>Feel free to send us a message now!</span>
-          </div>
+            <h1>Contáctenos</h1> <span>¡No dudes en enviarnos un mensaje ahora!</span> </div>
         </div>
       </div>
     </div>
@@ -148,53 +138,49 @@
           <div class="col-md-5">
              <div class="contact-info-section">
                  <div class="container">
-                     <h4>Get In Touch</h4>
+                     <h4>Ponte en Contacto</h4>
                  </div>
              </div>
           </div>
 
           <div class="col-md-7">
             <div class="contact-form modern-contact-form">
-              <form id="form"> 
+              <form id="form">
                 <div class="row">
                   <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="form-group">
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
-                    </div>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Nombre Completo" required=""> </div>
                   </div>
                   <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="form-group">
-                      <input name="email" type="email" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
-                      </div>
+                      <input name="email" type="email" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="Dirección de Correo Electrónico" required=""> </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="form-group">
-                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
-                    </div>
+                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Asunto" required=""> </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="form-group">
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
-                    </div>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Tu Mensaje" required=""></textarea> </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="form-group">
-                      <button type="submit" id="form-submit" class="btn-submit">Send Message</button>
-                    </div>
+                      <button type="submit" id="form-submit" class="btn-submit">Enviar Mensaje</button> </div>
                   </div>
                 </div>
               </form>
               <script>
                 document.getElementById("form").addEventListener("submit", function (e) {
                     e.preventDefault();
-                
+
                     document.getElementById("form").innerHTML = '<div style="text-align: center;"><img src="files/loading.gif" width="80"></div>';
-                
+
                     setTimeout(() => {
-                        document.getElementById("form").innerHTML = '<p style="font-size: 18px; color:black; font-weight: 700; text-align: center;">Thank you for register with JM Consulting Global. Our team will get in touch with you shortly to discuss your options.</p>';
+                        // Translated success message, kept company name
+                        document.getElementById("form").innerHTML = '<p style="font-size: 18px; color:black; font-weight: 700; text-align: center;">Gracias por registrarte con JM Consulting Global. Nuestro equipo se pondrá en contacto contigo en breve para discutir tus opciones.</p>';
                     }, 2000);
                 });
-              </script> 
+              </script>
             </div>
           </div>
         </div>
@@ -206,24 +192,16 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 footer-item">
-            <img src="files/logo.png" alt="Logo"> </div>
-          <div class="col-md-6 footer-item">
-            <h5>Company</h5> <br>
-            <small>
-                CIN - U01631KA2010PTC096843 <br>
-                Address - 2, Western Urban Rd, Davri Nagar, Siddharth Nagar, <br>
-                Santacruz East, Mumbai, Maharashtra 400055, India <br>
-                Phone - 0674 2702416 <br>
+            <img src="files/logo.png" alt="Logo"> </div> <div class="col-md-6 footer-item">
+            <h5>Empresa</h5> <br> <small> CNPJ: 78.989.613/0001-90 <br>
+                Inscrição Estadual: 8324829-77 <br>
+                Endereço: 974 Rua Itaguaí, Mangabeira, Feira de Santana, 44056-516 <br>
+                Número de telefone: (75) 2871-8215 <br>
             </small>
           </div>
           <div class="col-md-3 footer-item">
-            <h4>Useful Links</h4>
-            <ul class="menu-list">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="privacy.html">Privacy Policy</a></li>
-              <li><a href="terms.html">Terms and Conditions</a></li>
-            </ul>
+            <h4>Enlaces Útiles</h4> <ul class="menu-list">
+              <li><a href="about.html">Sobre Nosotros</a></li> <li><a href="contact.html">Contáctenos</a></li> <li><a href="privacy.html">Política de Privacidad</a></li> <li><a href="terms.html">Términos y Condiciones</a></li> </ul>
           </div>
         </div>
       </div>
@@ -234,8 +212,7 @@
         <div class="row">
           <div class="col-md-12">
             <p>
-                &copy; Copyright 2025 JM Consulting Global. All rights reserved.
-            </p>
+                &copy; Copyright 2025 JM Consulting Global. Todos los derechos reservados. </p>
           </div>
         </div>
       </div>
